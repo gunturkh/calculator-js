@@ -65,13 +65,13 @@ const moduloDOM = (event) => {
 const squareAreaDOM = (event) => {
     event.preventDefault()
     const squareAreaValue = Number(document.getElementById("square-area-input").value)
-    squareAreaResult.innerHTML = squareArea(squareAreaValue) + " cm2"
+    squareAreaResult.innerHTML = squareArea(squareAreaValue) + " cm<sup>2</sup>"
 }
 
 const circleAreaDOM = (event) => {
     event.preventDefault()
     const circleAreaValue = Number(document.getElementById("circle-area-input").value)
-    circleAreaResult.innerHTML = circleArea(circleAreaValue) + " cm2"
+    circleAreaResult.innerHTML = circleArea(circleAreaValue) + " cm<sup>2</sup>"
 }
 
 // Event Listener
