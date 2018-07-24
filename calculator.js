@@ -27,38 +27,38 @@ const circleArea = (a) => Number(Math.PI * Math.pow(a, 2)).toFixed(2)
 
 const addDOM = (event) => {
     event.preventDefault()
-    const addFirst = Number(document.getElementById("addVar1").value)
-    const addSecond = Number(document.getElementById("addVar2").value)
+    const addFirst = Number(document.getElementById("add-1").value)
+    const addSecond = Number(document.getElementById("add-2").value)
     if (addFirst && addSecond) addResult.innerHTML = add(addFirst, addSecond)
 
 }
 
 const substractDOM = (event) => {
     event.preventDefault()
-    const substractFirst = Number(document.getElementById("substractVar1").value)
-    const substractSecond = Number(document.getElementById("substractVar2").value)
+    const substractFirst = Number(document.getElementById("substract-1").value)
+    const substractSecond = Number(document.getElementById("substract-2").value)
     if (substractFirst && substractSecond) substractResult.innerHTML = substract(substractFirst, substractSecond)
 
 }
 
 const multiplyDOM = (event) => {
     event.preventDefault()
-    const multiplyFirst = Number(document.getElementById("multiplyVar1").value)
-    const multiplySecond = Number(document.getElementById("multiplyVar2").value)
+    const multiplyFirst = Number(document.getElementById("multiply-1").value)
+    const multiplySecond = Number(document.getElementById("multiply-2").value)
     if (multiplyFirst && multiplySecond) multiplyResult.innerHTML = multiply(multiplyFirst, multiplySecond)
 }
 
 const divideDOM = (event) => {
     event.preventDefault()
-    const divideFirst = Number(document.getElementById("divideVar1").value)
-    const divideSecond = Number(document.getElementById("divideVar2").value)
+    const divideFirst = Number(document.getElementById("divide-1").value)
+    const divideSecond = Number(document.getElementById("divide-2").value)
     if (divideFirst && divideSecond) divideResult.innerHTML = divide(divideFirst, divideSecond)
 }
 
 const moduloDOM = (event) => {
     event.preventDefault()
-    const moduloFirst = Number(document.getElementById("moduloVar1").value)
-    const moduloSecond = Number(document.getElementById("moduloVar2").value)
+    const moduloFirst = Number(document.getElementById("modulo-1").value)
+    const moduloSecond = Number(document.getElementById("modulo-2").value)
     if (moduloFirst && moduloSecond) moduloResult.innerHTML = modulo(moduloFirst, moduloSecond)
 }
 
