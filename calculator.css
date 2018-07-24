@@ -6,3 +6,28 @@
     margin-left: 10px;
     margin-right: 10px
 }
+
+.result {
+    margin-left: 10px
+}
+
+.btn.btn-primary {
+    margin-left: 10px
+}
+
+#divide-operator {
+    margin-left: 20px;
+    margin-right: 20px
+}
+#multiply-operator {
+    margin-left: 18px;
+    margin-right: 18px
+}
+#substract-operator {
+    margin-left: 20px;
+    margin-right: 20px
+}
+#add-operator {
+    margin-left: 18px;
+    margin-right: 18px
+}
