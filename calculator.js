@@ -10,15 +10,18 @@ const moduloForm = document.getElementById("modulo-form")
 const moduloResult = document.getElementById("modulo-result")
 const squareAreaForm = document.getElementById("square-area-form")
 const squareAreaResult = document.getElementById("square-area-result")
+const circleAreaForm = document.getElementById("circle-area-form")
+const circleAreaResult = document.getElementById("circle-area-result")
 
 // Basic Functions
 
-const add = (a, b) => a + b
-const substract = (a, b) => a - b
-const multiply = (a, b) => a * b
-const divide = (a, b) => a / b
-const modulo = (a, b) => a % b
-const squareArea = (a) => Math.pow(a, 2)
+const add = (a, b) => Number (a + b).toFixed(2)
+const substract = (a, b) => Number (a - b).toFixed(2)
+const multiply = (a, b) => Number (a * b).toFixed(2)
+const divide = (a, b) => Number (a / b).toFixed(2)
+const modulo = (a, b) => Number (a % b).toFixed(2)
+const squareArea = (a) => Number (Math.pow(a, 2)).toFixed(2)
+const circleArea = (a) => Number (Math.PI * Math.pow(a,2)).toFixed(2)
 
 // DOM Functions
 
@@ -65,6 +68,12 @@ const squareAreaDOM = (event) => {
     squareAreaResult.innerHTML = squareArea(squareAreaValue) + " cm2"
 }
 
+const circleAreaDOM = (event) => {
+    event.preventDefault()
+    const circleAreaValue = Number(document.getElementById("circle-area-input").value)
+    circleAreaResult.innerHTML = circleArea(circleAreaValue) + " cm2"
+}
+
 // Event Listener
 addForm.addEventListener("submit", addDOM)
 substractForm.addEventListener("submit", substractDOM)
@@ -72,3 +81,4 @@ multiplyForm.addEventListener("submit", multiplyDOM)
 divideForm.addEventListener("submit", divideDOM)
 moduloForm.addEventListener("submit", moduloDOM)
 squareAreaForm.addEventListener("submit", squareAreaDOM)
+circleAreaForm.addEventListener("submit",circleAreaDOM)
