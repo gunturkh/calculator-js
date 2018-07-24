@@ -15,13 +15,13 @@ const circleAreaResult = document.getElementById("circle-area-result")
 
 // Basic Functions
 
-const add = (a, b) => Number (a + b).toFixed(2)
-const substract = (a, b) => Number (a - b).toFixed(2)
-const multiply = (a, b) => Number (a * b).toFixed(2)
-const divide = (a, b) => Number (a / b).toFixed(2)
-const modulo = (a, b) => Number (a % b).toFixed(2)
-const squareArea = (a) => Number (Math.pow(a, 2)).toFixed(2)
-const circleArea = (a) => Number (Math.PI * Math.pow(a,2)).toFixed(2)
+const add = (a, b) => Number(a + b).toFixed(2)
+const substract = (a, b) => Number(a - b).toFixed(2)
+const multiply = (a, b) => Number(a * b).toFixed(2)
+const divide = (a, b) => Number(a / b).toFixed(2)
+const modulo = (a, b) => Number(a % b).toFixed(2)
+const squareArea = (a) => Number(Math.pow(a, 2)).toFixed(2)
+const circleArea = (a) => Number(Math.PI * Math.pow(a, 2)).toFixed(2)
 
 // DOM Functions
 
@@ -81,4 +81,4 @@ multiplyForm.addEventListener("submit", multiplyDOM)
 divideForm.addEventListener("submit", divideDOM)
 moduloForm.addEventListener("submit", moduloDOM)
 squareAreaForm.addEventListener("submit", squareAreaDOM)
-circleAreaForm.addEventListener("submit",circleAreaDOM)
+circleAreaForm.addEventListener("submit", circleAreaDOM)
